@@ -1,0 +1,86 @@
+# mz-textbausteine - Konfiguration
+#
+# Jeder Eintrag besteht aus einem Auslöser und einer Ersetzung.
+# Der Auslöser wird sofort ersetzt, wenn er am Ende der Eingabe erscheint.
+#
+# Platzhalter in der Ersetzung:
+#   {{datum}}  -> tt.mm.jjjj
+#   {{zeit}}   -> hh:mm
+#
+# Zeilenumbrüche werden als Enter-Taste gesendet.
+
+[[textbaustein]]
+tastenfolge = "space e"
+ersetzung = "vorname.nachname@example.com"
+
+[[textbaustein]]
+tastenfolge = "space d"
+ersetzung = "{{datum}}"
+
+[[textbaustein]]
+tastenfolge = "space u"
+ersetzung = "{{zeit}} Uhr"
+
+[[textbaustein]]
+tastenfolge = "space s"
+ersetzung = "{{zeit_sek}}"
+
+[[textbaustein]]
+tastenfolge = "space x"
+ersetzung = "X @marcelzimmer"
+
+[[textbaustein]]
+tastenfolge = "space g"
+ersetzung = "GitHub @marcelzimmer"
+
+[[textbaustein]]
+tastenfolge = "space t"
+ersetzung = "{{datum}} @{{zeit}} Uhr"
+
+[[textbaustein]]
+tastenfolge = "space m"
+ersetzung = "Mit freundlichen Grüssen\n\nMarcel Zimmer"
+
+[[textbaustein]]
+tastenfolge = "space w"
+ersetzung = "www.marcelzimmer.de"
+
+[[textbaustein]]
+ausloeser = "@@ "
+ersetzung = "vorname.nachname@example.com"
+
+[[textbaustein]]
+ausloeser = "@e "
+ersetzung = "vorname.nachname@example.com"
+
+[[textbaustein]]
+ausloeser = "@d "
+ersetzung = "{{datum}} "
+
+[[textbaustein]]
+ausloeser = "@u "
+ersetzung = "{{zeit}} Uhr "
+
+[[textbaustein]]
+ausloeser = "@us "
+ersetzung = "{{zeit_sek}} "
+
+[[textbaustein]]
+ausloeser = "@du "
+ersetzung = "{{datum}} @{{zeit}} Uhr "
+
+[[textbaustein]]
+ausloeser = "@g "
+ersetzung = "GitHub @marcelzimmer"
+
+[[textbaustein]]
+ausloeser = "@x "
+ersetzung = "X @marcelzimmer"
+
+[[textbaustein]]
+ausloeser = "@mfg "
+ersetzung = "Mit freundlichen Grüssen\n\nMarcel Zimmer"
+
+[[textbaustein]]
+ausloeser = "@w "
+ersetzung = "www.marcelzimmer.de"
